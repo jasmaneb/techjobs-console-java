@@ -64,7 +64,7 @@ public class TechJobs {
                     printJobs(JobData.findByValue(searchTerm.toLowerCase()));
 
                 } else {
-                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
+                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm.toLowerCase()));
                 }
             }
         }
